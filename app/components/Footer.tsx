@@ -13,7 +13,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="underline"
           >
-            Linkdin
+            LinkedIn
           </a>
         </div>
       </div>
