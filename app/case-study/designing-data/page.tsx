@@ -73,7 +73,7 @@ export default function DesigningData() {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="pt-[308px] lg:pt-[448px]">
+        <section className="pt-[60px] lg:pt-[128px]">
           <Wide>
             <h1 className="text-4xl sm:text-6xl lg:text-[96px] font-bold tracking-[-2px] lowercase first-letter:uppercase leading-[1.04] text-title">
               Designing Data
@@ -125,6 +125,36 @@ export default function DesigningData() {
               meaningful business insights.
             </Body>
           </Text>
+          <Wide className="mt-12 lg:mt-20">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-stretch">
+              {/* Before */}
+              <div className="flex-1 flex flex-col gap-3">
+                <div className="flex-1 rounded-[16px] sm:rounded-[24px] bg-[#ECECEC] p-4 sm:p-6 lg:p-10 overflow-hidden">
+                  <Shot
+                    src="/case-study/dd-challenge-before.svg"
+                    alt="Before: old dashboard"
+                    width={723}
+                    height={382}
+                    className="w-full h-auto block"
+                  />
+                </div>
+                <p className="text-[16px] text-body text-center">Before</p>
+              </div>
+              {/* After */}
+              <div className="flex-1 flex flex-col gap-3">
+                <div className="flex-1 rounded-[16px] sm:rounded-[24px] bg-[#000759] p-4 sm:p-6 lg:p-10 overflow-hidden flex items-center justify-center">
+                  <Shot
+                    src="/case-study/dd-challenge-after.svg"
+                    alt="After: redesigned dashboard"
+                    width={723}
+                    height={382}
+                    className="w-full h-auto block"
+                  />
+                </div>
+                <p className="text-[16px] text-body text-center">After</p>
+              </div>
+            </div>
+          </Wide>
         </section>
 
         {/* From Chaos to Clarity */}
@@ -143,7 +173,7 @@ export default function DesigningData() {
             </Body>
           </Text>
           <Wide className="mt-12 lg:mt-20">
-            <div className="rounded-[16px] sm:rounded-[24px] bg-[#000759] pt-4 sm:pt-8 lg:pt-14 px-4 sm:px-8 lg:px-14 pb-0 overflow-hidden flex items-end">
+            <div className="rounded-[16px] sm:rounded-[24px] bg-[#000759] pt-4 sm:pt-8 lg:pt-14 px-4 sm:px-8 lg:px-14 pb-0 overflow-hidden flex items-end justify-center">
               <Shot src="/case-study/dd-chaos.svg" alt="Tab-based navigation and smart filters dashboard" width={1195} height={1317} className="w-[80%] h-auto block mx-auto" />
             </div>
           </Wide>
@@ -216,8 +246,8 @@ export default function DesigningData() {
                 </div>
               </div>
 
-              {/* Dashboard image — text column width */}
-              <div className="mx-auto w-full max-w-[934px] px-5 sm:px-8 pb-10 lg:pb-14">
+              {/* Dashboard image — full wide */}
+              <div className="w-full px-5 sm:px-8 lg:px-20 pb-10 lg:pb-14">
                 <Shot src="/case-study/dd-journey-dashboard.svg" alt="Safety insights dashboard in context" width={1182} height={676} className="w-full h-auto" />
               </div>
             </div>

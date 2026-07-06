@@ -76,7 +76,7 @@ export default function AboutPage() {
         {/* Passion cards — original gutters */}
         <div className="mx-auto max-w-[1790px] px-5 sm:px-8 lg:px-10 mt-[103px]">
           <p style={{ fontFamily: "var(--font-caveat)", fontSize: "32px", color: "#262626", marginBottom: "16px" }}>
-            check out my side projects
+            Check out my side projects
           </p>
           <section className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 pb-8">
             {/* Work */}

@@ -47,3 +47,22 @@ body {
     transform: none !important;
   }
 }
+
+/* Intro phrase — rotate on all screens, translateY only on sm+ */
+.intro-phrase {
+  display: inline-block;
+  transform: rotate(2deg);
+  white-space: normal;
+}
+@media (min-width: 640px) {
+  .intro-phrase {
+    transform: translateY(-200px) rotate(2deg);
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  .intro-phrase {
+    transform: translateY(-240px) rotate(2deg);
+    white-space: nowrap;
+  }
+}

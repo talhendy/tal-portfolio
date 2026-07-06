@@ -30,7 +30,7 @@ export default function Header() {
           >
             <span className={onAbout ? "" : "text-light hover:text-body"}>About</span>
           </Link>
-          <a href="https://drive.google.com/file/d/16OtTTnMvghhX6a_YnFVf_FqPVc7L5-Sq/view" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-light hover:text-body transition-colors">
+          <a href="https://drive.google.com/file/d/1zinecgBBASm-joS6CxCSFE1WNWMmK10Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-light hover:text-body transition-colors">
             Resume
           </a>
         </nav>
@@ -61,7 +61,7 @@ export default function Header() {
             About
           </Link>
           <a
-            href="https://drive.google.com/file/d/16OtTTnMvghhX6a_YnFVf_FqPVc7L5-Sq/view"
+            href="https://drive.google.com/file/d/1zinecgBBASm-joS6CxCSFE1WNWMmK10Y/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center min-h-[44px] px-4 text-base text-body hover:text-title transition-colors"

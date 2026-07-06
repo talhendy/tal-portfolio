@@ -88,7 +88,7 @@ export default function FromConversationToConversion() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="pt-[308px] lg:pt-[448px]">
+        <section className="pt-[60px] lg:pt-[128px]">
           <Wide>
             <h1 className="text-4xl sm:text-6xl lg:text-[96px] font-bold tracking-[-2px] lowercase first-letter:uppercase leading-[1.04] text-title">
               From Conversation To Conversion
@@ -243,7 +243,7 @@ export default function FromConversationToConversion() {
           <Text>
             <Orientation>Design</Orientation>
             <div className="mt-10">
-              <SectionTitle>Solution</SectionTitle>
+              <SectionTitle>Research insights and design solutions</SectionTitle>
             </div>
 
             {/* Framing the Conversation */}
