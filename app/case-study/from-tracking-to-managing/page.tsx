@@ -361,39 +361,6 @@ export default function FromTrackingToManaging() {
           </Caption>
         </section>
 
-        {/* Measuring Success */}
-        <section className="mt-20 lg:mt-[140px]">
-          <Text>
-            <Orientation>Measure</Orientation>
-            <div className="mt-10">
-              <SectionTitle>Measuring Success</SectionTitle>
-            </div>
-            <Body className="mt-10">
-              To track whether the solution works, we defined 3 KPIs.
-            </Body>
-            <ol className="mt-8 space-y-4 list-decimal pl-6 text-[18px] leading-[1.54] text-body marker:font-bold marker:text-title">
-              <li>
-                <span className="font-semibold text-title">
-                  Overdue deficiency reduction
-                </span>{" "}
-                - measuring decrease in overdue items.
-              </li>
-              <li>
-                <span className="font-semibold text-title">
-                  Inspection Completion Rate
-                </span>{" "}
-                - tracking progress toward annual inspection goals.
-              </li>
-              <li>
-                <span className="font-semibold text-title">
-                  Field team response time
-                </span>{" "}
-                - measuring how quickly teams are deployed to critical areas.
-              </li>
-            </ol>
-          </Text>
-        </section>
-
         {/* More case studies navigation */}
         <section className="mt-[110px] mb-0">
           <Wide>
