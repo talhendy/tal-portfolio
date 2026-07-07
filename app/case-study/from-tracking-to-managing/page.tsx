@@ -372,6 +372,27 @@ export default function FromTrackingToManaging() {
           </Caption>
         </section>
 
+        {/* In Their Words */}
+        <section className="mt-20 lg:mt-[140px]">
+          <Text>
+            <SectionTitle>In Their Words</SectionTitle>
+            <ul className="mt-6 space-y-6 text-[18px] leading-[1.54] text-body italic">
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>A Maintenance Manager noted that the design reflected a deep understanding of how their team actually works - and that the pain points they&apos;d struggled to articulate had been translated into something visual and intuitive.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>A second Maintenance Manager noted that for the first time, they could see the full picture of their region without chasing information across files and emails.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>The regional Finance Manager noted that the solution addressed the root of the problem, not just the surface - and that the ability to serve multiple stakeholders within a single product was something she hadn&apos;t expected to be possible.</span>
+              </li>
+            </ul>
+          </Text>
+        </section>
+
         {/* More case studies navigation */}
         <section className="mt-[110px] mb-0">
           <Wide>
