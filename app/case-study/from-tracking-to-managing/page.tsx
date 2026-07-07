@@ -259,28 +259,33 @@ export default function FromTrackingToManaging() {
             </Body>
           </Text>
 
-          {/* 1 - Layout for Work */}
+          {/* 1 - One View Across All Work Centers */}
           <Text className="mt-12 lg:mt-20">
-            <SubTitle>Layout for Work, Not Just Display</SubTitle>
+            <SubTitle>One View Across All Work Centers</SubTitle>
             <div className="mt-6 space-y-8">
               <div>
                 <ParaTitle>Research insight</ParaTitle>
                 <Body className="mt-1">
-                  Maintenance Managers need space to manage hundreds of
-                  deficiencies and organize field work, not just view summaries.
+                  Maintenance Managers had no way to see the status of all their
+                  Work Centers in one place - making it impossible to get a quick
+                  read on regional performance.
                 </Body>
               </div>
               <div>
                 <ParaTitle>Implementation</ParaTitle>
                 <Body className="mt-1">
-                  I moved KPIs to the left sidebar, creating vertical workspace for
-                  task management.
+                  I designed a control center view - one card per Work Center,
+                  each surfacing critical deficiency counts and progress toward
+                  annual inspection targets. At a glance, managers can assess the
+                  state of their entire region and know where attention is needed.
                 </Body>
               </div>
             </div>
           </Text>
           <Wide className="mt-10">
-            <Dashboard src="/case-study/ftm-dash1.svg" alt="Work center management dashboard" width={1457} height={849} />
+            <div className="rounded-[16px] sm:rounded-[24px] bg-[#dfecf5] p-4 sm:p-8 lg:p-14 overflow-hidden">
+              <Shot src="/case-study/ftm-dash1-new.svg" alt="Work center management dashboard" width={1457} height={849} className="w-[104%] h-auto block mx-auto -ml-[2%]" />
+            </div>
           </Wide>
           <Caption>
             KPIs moved to the left to maximize horizontal screen space. This lets
@@ -295,17 +300,19 @@ export default function FromTrackingToManaging() {
               <div>
                 <ParaTitle>Research insight</ParaTitle>
                 <Body className="mt-1">
-                  Maintenance Managers use scattered Excel files and email threads
-                  where critical information gets lost and is difficult to track
-                  across hundreds of deficiencies spread across 9 Work Centers.
+                  Deficiencies were reported through email pushes and Excel files.
+                  Managers described a fragmented process - information arrived in
+                  pieces, with no clear path from alert to action.
                 </Body>
               </div>
               <div>
                 <ParaTitle>Implementation</ParaTitle>
                 <Body className="mt-1">
-                  I studied how managers work with Excel and email to understand
-                  their decision-making process. Then I designed a flow that guides
-                  them without overload.
+                  I mapped the existing workflow to understand how managers moved
+                  from notification to decision. Then I designed the drill-down
+                  navigation to mirror that process - progressively exposing detail
+                  at each level, and ending with a deployable field document that
+                  tells teams exactly where to go and what to fix.
                 </Body>
               </div>
             </div>
