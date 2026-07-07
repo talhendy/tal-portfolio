@@ -151,11 +151,9 @@ export default function FromTrackingToManaging() {
         {/* Starting Point */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
-            <SectionTitle>Starting Point</SectionTitle>
+            <SectionTitle>The Problem</SectionTitle>
             <Body className="mt-10">
-              The finance team reached out on behalf of senior leadership (division
-              and department heads) requesting a control dashboard to monitor
-              maintenance operations across different regions.
+              Maintenance units across 9 regional divisions were showing resource waste and declining performance scores -but no one had a clear picture of why.
             </Body>
           </Text>
         </section>
@@ -165,12 +163,11 @@ export default function FromTrackingToManaging() {
           <Text>
             <Orientation>Discovery</Orientation>
             <div className="mt-10">
-              <SectionTitle>Getting Up to Speed</SectionTitle>
+              <SectionTitle>User Research: The Full Picture</SectionTitle>
             </div>
             <Body className="mt-10">
-              The brief was minimal and filled with technical terminology I
-              didn&apos;t understand. To get up to speed quickly, I used custom
-              Claude Skills I&apos;d built to prepare for the kickoff meeting.
+              To get up to speed quickly, I used custom Claude Skills I&apos;d
+              built to prepare for the kickoff meeting.
             </Body>
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
               <li className="text-[18px] leading-[1.54] text-body">
@@ -191,25 +188,38 @@ export default function FromTrackingToManaging() {
               </li>
             </ul>
 
-            <div className="mt-12 lg:mt-20">
-              <SubTitle>Understanding the Request</SubTitle>
-              <Body className="mt-6">
-                Leadership identified resource waste in maintenance units and low
-                performance scores. They wanted a dashboard to track performance
-                in real-time and alert units about issues so they could correct
-                course.
-              </Body>
-            </div>
+            <Body className="mt-10">
+              I spoke with regional finance managers, division heads, and 3 out
+              of 9 Maintenance Managers. My focus was on understanding how
+              maintenance units operate day-to-day -how deficiencies are
+              surfaced from the field and how they get resolved.
+            </Body>
+
+            <Body className="mt-6 font-bold">Three core problems emerged:</Body>
+            <ul className="mt-4 space-y-3 text-[18px] leading-[1.54] text-body">
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>Information is scattered across multiple channels with no single source of truth.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>Field deficiencies are reported through Excel files and emails -slow, manual, and easy to lose.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>Maintenance Managers are a bottleneck -all information flows through them, with nothing shared in real time with the field teams responsible for the actual fixes.</span>
+              </li>
+            </ul>
 
             <div className="mt-12 lg:mt-20">
-              <SubTitle>Going Deeper: Talking to Domain Experts</SubTitle>
+              <SubTitle>Identifying The Primary User</SubTitle>
               <Body className="mt-6">
-                I requested access to Maintenance Managers, the domain experts who
-                understood the technical details. In those conversations, a
-                different story emerged: managers were struggling with inefficient,
-                overwhelming workflows. They needed help with field monitoring and
-                work planning. Only then could they improve scores and use
-                resources more efficiently.
+                Each stakeholder pulled in a different direction. Finance and
+                senior leadership wanted performance tracking. Maintenance
+                Managers wanted to fix how field work actually gets done. The
+                decision was made to design for Maintenance Managers first —
+                because solving operational inefficiency was the prerequisite
+                for improving any metric.
               </Body>
             </div>
           </Text>
@@ -218,21 +228,15 @@ export default function FromTrackingToManaging() {
         {/* The Shift */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
-            <SectionTitle>The Shift</SectionTitle>
-            <Body className="mt-10">
-              A tracking dashboard for executives wouldn&apos;t solve inefficiency
-              at the operational level. This required rethinking who the primary
-              user should be. Maintenance Managers became the primary persona.
-            </Body>
             <Shot
               src="/case-study/ftm-shift.svg"
               alt="Persona reframing diagram"
               width={1270}
               height={945}
-              className="mt-12 lg:mt-20 w-full h-auto block"
+              className="-mt-[36px] w-[120%] h-auto block -ml-[10%]"
             />
             <div className="mt-12 lg:mt-20">
-              <SubTitle>Reframing the Challenge</SubTitle>
+              <SectionTitle>Reframing the Challenge</SectionTitle>
               <Body className="mt-6">
                 Design a product that provides Maintenance Managers with real-time
                 visibility into their operations so they can make better decisions
@@ -365,9 +369,9 @@ export default function FromTrackingToManaging() {
         <section className="mt-[110px] mb-0">
           <Wide>
             <div className="bg-[#F0F0F0] rounded-[16px] sm:rounded-[24px] px-8 lg:px-16 pt-12 lg:pt-16 pb-12 lg:pb-16">
-              {/* Overlapping cards — blue on top (z-10), pink behind (z-0) */}
+              {/* Overlapping cards -blue on top (z-10), pink behind (z-0) */}
               <div className="relative flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 lg:gap-0">
-                {/* Blue card — left, on top */}
+                {/* Blue card -left, on top */}
                 <div className="relative z-10 w-[68%] lg:w-[35%]">
                   <HomeTiltCard
                     title="Designing data"
@@ -381,7 +385,7 @@ export default function FromTrackingToManaging() {
                     imageMb="mb-[8px]"
                   />
                 </div>
-                {/* Pink card — right, slightly behind and lower */}
+                {/* Pink card -right, slightly behind and lower */}
                 <div className="relative z-0 w-[68%] lg:w-[35%] lg:-ml-[10%] lg:mt-[4%]">
                   <HomeTiltCard
                     title="From conversation to conversion"
