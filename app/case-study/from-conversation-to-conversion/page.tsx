@@ -394,6 +394,26 @@ export default function FromConversationToConversion() {
           </Wide>
         </section>
 
+        {/* Impact & Adoption */}
+        <section className="mt-20 lg:mt-[140px]">
+          <Text>
+            <SectionTitle>Impact &amp; Adoption</SectionTitle>
+            <p className="mt-6 text-[29px] leading-[1.54] text-body italic">
+              &ldquo;I thinks it&apos;s a great tool and we should absolutely use it in our daily work.&rdquo;
+            </p>
+            <ul className="mt-6 space-y-4 text-[18px] leading-[1.54] text-body">
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>During the Beta, agents actively incorporated the tool into their daily workflow, sharing positive feedback on how it supported their sales process.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-title font-bold">•</span>
+                <span>The tool&apos;s value also extended beyond its original scope - the US market, which wasn&apos;t part of the initial design, requested access and adapted it to fit their local needs.</span>
+              </li>
+            </ul>
+          </Text>
+        </section>
+
         {/* More case studies navigation */}
         <section className="mt-[110px] mb-0">
           <Wide>
