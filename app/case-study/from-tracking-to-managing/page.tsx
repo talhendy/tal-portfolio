@@ -240,7 +240,7 @@ export default function FromTrackingToManaging() {
               <Body className="mt-6">
                 Design a product that provides Maintenance Managers with real-time
                 visibility into their operations so they can make better decisions
-                and use resources more efficiently?
+                and use resources more efficiently.
               </Body>
             </div>
           </Text>
