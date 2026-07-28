@@ -127,9 +127,7 @@ export default function FromTrackingToManaging() {
               <div>
                 <SectionTitle>Background</SectionTitle>
                 <Body className="mt-10">
-                  Maintenance units at a major electricity company manage hundreds
-                  of safety deficiencies across facilities, ensuring regulatory
-                  compliance and operational safety.
+                  A large electricity company operates 9 departments, each responsible for maintaining electrical facilities across the country. These departments carry out regular inspections and testing, and repair any deficiencies found - all to protect the safety of company employees and the public.
                 </Body>
               </div>
               <dl className="space-y-6 lg:pt-4 lg:ml-10">
@@ -151,10 +149,16 @@ export default function FromTrackingToManaging() {
         {/* Starting Point */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
-            <SectionTitle>The Problem</SectionTitle>
+            <SectionTitle>The starting point - the brief</SectionTitle>
             <Body className="mt-10">
-              Maintenance units across 9 regional divisions were showing resource waste and declining performance scores -but no one had a clear picture of why.
+              Maintenance units across 9 regional divisions were showing resource waste and declining performance scores.
             </Body>
+            <div className="mt-8">
+              <SubTitle>The goal presented in the brief</SubTitle>
+              <Body className="mt-4">
+                Give leadership a trackable view of maintenance performance across all 9 regions.
+              </Body>
+            </div>
           </Text>
         </section>
 
@@ -163,51 +167,28 @@ export default function FromTrackingToManaging() {
           <Text>
             <Orientation>Discovery</Orientation>
             <div className="mt-10">
-              <SectionTitle>User Research: The Full Picture</SectionTitle>
+              <SectionTitle>User Research - The Full Picture</SectionTitle>
             </div>
             <Body className="mt-10">
-              To get up to speed quickly, I used custom Claude Skills I&apos;d
-              built to prepare for the kickoff meeting.
-            </Body>
-            <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
-              <li className="text-[18px] leading-[1.54] text-body">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/case-study/claude-asterisk.svg" alt="" aria-hidden="true" width={35} height={35} className="mb-4 w-[35px] h-[35px]" />
-                <span className="font-semibold text-title">
-                  &lsquo;Kickoff-Meeting&rsquo;
-                </span>{" "}
-                skill to help me structure the discovery session effectively.
-              </li>
-              <li className="text-[18px] leading-[1.54] text-body">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/case-study/claude-asterisk.svg" alt="" aria-hidden="true" width={35} height={35} className="mb-4 w-[35px] h-[35px]" />
-                <span className="font-semibold text-title">
-                  &lsquo;User-Research&rsquo;
-                </span>{" "}
-                skill to help me plan the user interviews quickly.
-              </li>
-            </ul>
-
-            <Body className="mt-10">
-              I spoke with regional finance managers, division heads, and 3 out
+              I spoke with regional finance managers and 3 out
               of 9 Maintenance Managers. My focus was on understanding how
               maintenance units operate day-to-day -how deficiencies are
               surfaced from the field and how they get resolved.
             </Body>
 
-            <Body className="mt-6 font-bold">Three core problems emerged:</Body>
+            <Body className="mt-6 font-bold">Three core insights emerged:</Body>
             <ul className="mt-4 space-y-3 text-[18px] leading-[1.54] text-body">
               <li className="flex gap-3">
                 <span className="text-title font-bold">•</span>
-                <span>Information is scattered across multiple channels with no single source of truth.</span>
+                <span>Maintenance Managers had no way to see the status of all their work centers in one place.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-title font-bold">•</span>
-                <span>Field deficiencies are reported through Excel files and emails -slow, manual, and easy to lose.</span>
+                <span>Maintenance Managers described a fragmented decision-making process.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-title font-bold">•</span>
-                <span>Maintenance Managers are a bottleneck -all information flows through them, with nothing shared in real time with the field teams responsible for the actual fixes.</span>
+                <span>Information didn&apos;t move freely across the organization. Maintenance managers acted as a bottleneck, and the criteria they were measured on weren&apos;t visible to them.</span>
               </li>
             </ul>
 
@@ -287,11 +268,16 @@ export default function FromTrackingToManaging() {
               <Shot src="/case-study/ftm-dash1-new.svg" alt="Work center management dashboard" width={1457} height={849} className="w-[104%] h-auto block mx-auto -ml-[2%]" />
             </div>
           </Wide>
-          <Caption>
-            KPIs moved to the left to maximize horizontal screen space. This lets
-            users see critical information without scrolling and provides more
-            workspace for planning field operations.
-          </Caption>
+          <Text className="mt-10">
+            <Body>
+              For the control center to work as efficiently as possible, the information displayed needed to be highly accurate. I worked closely with Maintenance Managers to understand which data was most relevant and how best to present it.
+            </Body>
+          </Text>
+          <Wide className="mt-10">
+            <div className="rounded-[16px] sm:rounded-[24px] bg-[#dfecf5] p-4 sm:p-8 lg:p-14 overflow-hidden">
+              <Shot src="/case-study/ftm-iterations.svg" alt="Design iterations for the control center view" width={1761} height={825} className="w-full h-auto block mx-auto" />
+            </div>
+          </Wide>
 
           {/* 2 - Progressive Clarity */}
           <Text className="mt-12 lg:mt-20">
@@ -324,10 +310,19 @@ export default function FromTrackingToManaging() {
           {/* 3 - Shared Visibility */}
           <Text className="mt-12 lg:mt-20">
             <SubTitle>Shared Visibility from the Bottom Up</SubTitle>
-            <Body className="mt-6">
-              By giving access to multiple organizational levels, the product
-              creates shared ownership and reduces bottlenecks.
-            </Body>
+            <div className="mt-6">
+              <ParaTitle>Research insight</ParaTitle>
+              <Body className="mt-1">
+                Information didn&apos;t move freely across the organization - maintenance managers acted as a bottleneck, and the criteria they were measured on weren&apos;t visible to them.
+              </Body>
+            </div>
+            <div className="mt-6">
+              <ParaTitle>Implementation</ParaTitle>
+              <Body className="mt-1">
+                By giving access to multiple organizational levels, the product
+                creates shared ownership and reduces bottlenecks.
+              </Body>
+            </div>
             <div className="mt-8 text-[18px] leading-[1.54] text-body">
               <p>Access across three levels:</p>
               <ul className="mt-3 space-y-3">
