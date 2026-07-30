@@ -180,9 +180,9 @@ export default function FromTrackingToManaging() {
           <Text className="mt-8">
             <SubTitle>Three core insights emerged</SubTitle>
           </Text>
-          <Wide className="mt-6">
-            <Shot src="/case-study/ftm-insights.svg" alt="Three core insights from user research" width={1761} height={430} className="w-full h-auto block" />
-          </Wide>
+          <Text className="mt-6">
+            <Shot src="/case-study/ftm-insights.svg" alt="Three core insights from user research" width={1146} height={450} className="w-full h-auto block mt-[30px]" />
+          </Text>
         </section>
 
         {/* The Shift */}
