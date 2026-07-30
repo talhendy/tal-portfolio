@@ -240,16 +240,6 @@ export default function FromTrackingToManaging() {
               <Shot src="/case-study/ftm-dash1-new.svg" alt="Work center management dashboard" width={1457} height={849} className="w-[104%] h-auto block mx-auto -ml-[2%]" />
             </div>
           </Wide>
-          <Text className="mt-10">
-            <Body>
-              For the control center to work as efficiently as possible, the information displayed needed to be highly accurate. I worked closely with Maintenance Managers to understand which data was most relevant and how best to present it.
-            </Body>
-          </Text>
-          <Wide className="mt-10">
-            <div className="rounded-[16px] sm:rounded-[24px] bg-[#dfecf5] p-4 sm:p-8 lg:p-14 overflow-hidden">
-              <Shot src="/case-study/ftm-iterations.svg" alt="Design iterations for the control center view" width={1761} height={825} className="w-full h-auto block mx-auto" />
-            </div>
-          </Wide>
 
           {/* 2 - Progressive Clarity */}
           <Text className="mt-12 lg:mt-20">
