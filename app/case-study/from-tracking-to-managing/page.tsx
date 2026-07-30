@@ -176,46 +176,18 @@ export default function FromTrackingToManaging() {
               surfaced from the field and how they get resolved.
             </Body>
 
-            <Body className="mt-6 font-bold">Three core insights emerged:</Body>
-            <ul className="mt-4 space-y-3 text-[18px] leading-[1.54] text-body">
-              <li className="flex gap-3">
-                <span className="text-title font-bold">•</span>
-                <span>Maintenance Managers had no way to see the status of all their work centers in one place.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-title font-bold">•</span>
-                <span>Maintenance Managers described a fragmented decision-making process.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-title font-bold">•</span>
-                <span>Information didn&apos;t move freely across the organization. Maintenance managers acted as a bottleneck, and the criteria they were measured on weren&apos;t visible to them.</span>
-              </li>
-            </ul>
-
-            <div className="mt-12 lg:mt-20">
-              <SubTitle>Identifying The Primary User</SubTitle>
-              <Body className="mt-6">
-                Each stakeholder pulled in a different direction. Finance and
-                senior leadership wanted performance tracking. Maintenance
-                Managers wanted to fix how field work actually gets done. The
-                decision was made to design for Maintenance Managers first —
-                because solving operational inefficiency was the prerequisite
-                for improving any metric.
-              </Body>
-            </div>
           </Text>
+          <Text className="mt-8">
+            <SubTitle>Three core insights emerged</SubTitle>
+          </Text>
+          <Wide className="mt-6">
+            <Shot src="/case-study/ftm-insights.svg" alt="Three core insights from user research" width={1761} height={430} className="w-full h-auto block" />
+          </Wide>
         </section>
 
         {/* The Shift */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
-            <Shot
-              src="/case-study/ftm-shift.svg"
-              alt="Persona reframing diagram"
-              width={1270}
-              height={945}
-              className="-mt-[36px] w-[120%] h-auto block -ml-[10%]"
-            />
             <div className="mt-12 lg:mt-20">
               <SectionTitle>Reframing the Challenge</SectionTitle>
               <Body className="mt-6">
