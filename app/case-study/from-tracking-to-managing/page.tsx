@@ -120,6 +120,7 @@ export default function FromTrackingToManaging() {
           </Wide>
         </section>
 
+
         {/* Background */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
@@ -238,6 +239,17 @@ export default function FromTrackingToManaging() {
           <Wide className="mt-10">
             <div className="rounded-[16px] sm:rounded-[24px] bg-[#dfecf5] p-4 sm:p-8 lg:p-14 overflow-hidden">
               <Shot src="/case-study/ftm-dash1-new.svg" alt="Work center management dashboard" width={1457} height={849} className="w-[104%] h-auto block mx-auto -ml-[2%]" />
+            </div>
+          </Wide>
+
+          <Text className="mt-12 lg:mt-20">
+            <Body>
+              To make the control center work as efficiently as possible, the information it displayed had to be precise. I worked closely with maintenance managers to understand which information mattered most, and how to present it.
+            </Body>
+          </Text>
+          <Wide className="mt-10">
+            <div className="rounded-[16px] sm:rounded-[24px] bg-[#dfecf5] p-4 sm:p-8 lg:p-14 overflow-hidden">
+              <Shot src="/case-study/ftm-iterations-wc.svg" alt="Work center design iterations" width={1761} height={825} className="w-full h-auto block mx-auto" />
             </div>
           </Wide>
 
