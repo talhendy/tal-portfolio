@@ -46,6 +46,10 @@ function Body({ children, className = "" }: { children: React.ReactNode; classNa
   return <p className={`text-[18px] leading-[1.54] text-body ${className}`}>{children}</p>;
 }
 
+function ParaTitle({ children }: { children: React.ReactNode }) {
+  return <p className="text-[17px] md:text-[18px] font-bold text-title">{children}</p>;
+}
+
 // Dark-blue dashboard panel for this case study
 function Dashboard({
   src,
@@ -81,7 +85,7 @@ export default function DesigningData() {
           </Wide>
           <Wide className="mt-8 lg:mt-12">
             <Dashboard
-              src="/case-study/dd-hero.svg"
+              src="/case-study/dd-hero-new.svg"
               alt="Company-wide safety status dashboard"
               width={1397}
               height={798}
@@ -125,56 +129,58 @@ export default function DesigningData() {
               meaningful business insights.
             </Body>
           </Text>
-          <Wide className="mt-12 lg:mt-20">
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-stretch">
-              {/* Before */}
-              <div className="flex-1 flex flex-col gap-3">
-                <div className="flex-1 rounded-[16px] sm:rounded-[24px] bg-[#ECECEC] p-4 sm:p-6 lg:p-10 overflow-hidden">
-                  <Shot
-                    src="/case-study/dd-challenge-before.svg"
-                    alt="Before: old dashboard"
-                    width={723}
-                    height={382}
-                    className="w-full h-auto block"
-                  />
-                </div>
-                <p className="text-[16px] text-body text-center">Before</p>
-              </div>
-              {/* After */}
-              <div className="flex-1 flex flex-col gap-3">
-                <div className="flex-1 rounded-[16px] sm:rounded-[24px] bg-[#000759] p-4 sm:p-6 lg:p-10 overflow-hidden flex items-center justify-center">
-                  <Shot
-                    src="/case-study/dd-challenge-after.svg"
-                    alt="After: redesigned dashboard"
-                    width={723}
-                    height={382}
-                    className="w-full h-auto block"
-                  />
-                </div>
-                <p className="text-[16px] text-body text-center">After</p>
-              </div>
+        </section>
+
+        {/* Discovery */}
+        <section className="mt-20 lg:mt-[140px]">
+          <Text>
+            <Orientation>Discovery</Orientation>
+            <div className="mt-10">
+              <SectionTitle>Understanding the Data Behind Decision-Making</SectionTitle>
             </div>
-          </Wide>
+            <h3 className="mt-10 text-[22.8px] md:text-[32px] font-semibold lowercase first-letter:uppercase leading-tight text-title">Uncovering the Chaos</h3>
+            <Body className="mt-6">
+              I started by gathering every chart and data source that management had been relying on for information up to that point. These charts came from different employees across the unit and from various data repositories. My goal was to map out the existing information, understand its scope and what it contained.
+            </Body>
+            <Shot src="/case-study/dd-discovery.svg" alt="Discovery process mapping" width={1160} height={712} className="w-full h-auto block mt-[30px]" />
+          </Text>
+        </section>
+
+        {/* What are the business problems */}
+        <section className="mt-20 lg:mt-[140px]">
+          <Text>
+            <SectionTitle>User interviews - understanding the business problems</SectionTitle>
+            <Body className="mt-10">
+              For the user interviews, I spoke with the unit&apos;s management team, focusing on one central question: What business problems are you trying to solve?
+            </Body>
+            <h3 className="mt-10 text-[22.8px] md:text-[32px] font-semibold lowercase first-letter:uppercase leading-tight text-title">Three core insights emerged</h3>
+            <Shot src="/case-study/dd-insights.svg" alt="Three core insights emerged" width={1146} height={185} className="w-full h-auto block mt-[30px]" />
+          </Text>
         </section>
 
         {/* From Chaos to Clarity */}
         <section className="mt-20 lg:mt-[140px]">
           <Text>
-            <Orientation>Discovery and design</Orientation>
+            <Orientation>Design</Orientation>
             <div className="mt-10">
-              <SectionTitle>From Chaos to Clarity</SectionTitle>
+              <SectionTitle>From Chaos To Clarity</SectionTitle>
             </div>
-            <Body className="mt-10">
-              To bring order to the complexity, I began by mapping the data and
-              grouping it into content domains. From there, I built a clear
-              hierarchy with tabs, filters, and drill-downs. This structure turned
-              a dense dataset into something intuitive - making it easy to navigate
-              and effortless to understand.
-            </Body>
+            <div className="mt-10">
+              <ParaTitle>Research insight</ParaTitle>
+              <Body className="mt-1">
+                The data was tied to business problems from different areas within the unit, but because it was scattered and came from multiple sources, it wasn&apos;t clear what belonged to what.
+              </Body>
+            </div>
+            <div className="mt-6">
+              <ParaTitle>Implementation</ParaTitle>
+              <Body className="mt-1">
+                To bring order to the complexity, I began by mapping the data and grouping it into content domains. From there, I built a clear hierarchy with tabs, filters, and drill-downs. This structure turned a dense dataset into something intuitive– making it easy to navigate and effortless to understand.
+              </Body>
+            </div>
           </Text>
           <Wide className="mt-12 lg:mt-20">
             <div className="rounded-[16px] sm:rounded-[24px] bg-[#000759] pt-4 sm:pt-8 lg:pt-14 px-4 sm:px-8 lg:px-14 pb-0 overflow-hidden flex items-end justify-center">
-              <Shot src="/case-study/dd-chaos.svg" alt="Tab-based navigation and smart filters dashboard" width={1195} height={1317} className="w-[80%] h-auto block mx-auto" />
+              <Shot src="/case-study/dd-chaos-new.svg" alt="Tab-based navigation and smart filters dashboard" width={1767} height={1077} className="w-[96%] h-auto block mx-auto" />
             </div>
           </Wide>
         </section>
@@ -182,14 +188,19 @@ export default function DesigningData() {
         {/* From Data to Insight */}
         <section className="mt-20 lg:mt-[140px] mb-8">
           <Text>
-            <SectionTitle>From Data to Insight - Uncovering the Problem</SectionTitle>
-            <Body className="mt-10">
-              During my discussions with the main user, we examined the raw graphs
-              he had shared and used them as a starting point to uncover the real
-              business challenges behind the numbers. Once the problems were clear,
-              I was able to redesign the visualizations so they directly addressed
-              those challenges with a clearer and more effective solution.
-            </Body>
+            <SectionTitle>From Data To Insight</SectionTitle>
+            <div className="mt-10">
+              <ParaTitle>Research insight</ParaTitle>
+              <Body className="mt-1">
+                The existing charts didn&apos;t address the business problems that came up in the interviews, they showed information that wasn&apos;t tailored to management&apos;s needs and wasn&apos;t precise enough for them.
+              </Body>
+            </div>
+            <div className="mt-6">
+              <ParaTitle>Implementation</ParaTitle>
+              <Body className="mt-1">
+                During my discussions with the main user, we examined the raw graphs he had shared and used them as a starting point to uncover the real business challenges behind the numbers. Once the problems were clear, I was able to redesign the visualizations so they directly addressed those challenges with a clearer and more effective solution.
+              </Body>
+            </div>
           </Text>
 
           {/* The Journey card */}
@@ -200,7 +211,7 @@ export default function DesigningData() {
 
                 {/* Card header */}
                 <div className="mb-10 lg:mb-14">
-                  <p className="text-white text-2xl lg:text-[32px] font-bold">The Journey</p>
+                  <p className="text-white text-2xl lg:text-[32px] font-bold">My Thought Process</p>
                   <p className="text-white/60 text-sm lg:text-base mt-2">
                     Starting from the original graph, through the business insights we identified, and ending with the redesigned visualization.
                   </p>
@@ -248,7 +259,7 @@ export default function DesigningData() {
 
               {/* Dashboard image — full wide */}
               <div className="w-full px-5 sm:px-8 lg:px-20 pb-10 lg:pb-14">
-                <Shot src="/case-study/dd-journey-dashboard.svg" alt="Safety insights dashboard in context" width={1182} height={676} className="w-full h-auto" />
+                <Shot src="/case-study/dd-journey-dashboard-new.svg" alt="Safety insights dashboard in context" width={1182} height={676} className="w-full h-auto" />
               </div>
             </div>
           </Wide>

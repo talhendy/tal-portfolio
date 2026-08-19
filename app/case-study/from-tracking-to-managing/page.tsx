@@ -182,7 +182,7 @@ export default function FromTrackingToManaging() {
             <SubTitle>Three core insights emerged</SubTitle>
           </Text>
           <Text className="mt-6">
-            <Shot src="/case-study/ftm-insights.svg" alt="Three core insights from user research" width={1146} height={450} className="w-full h-auto block mt-[30px]" />
+            <Shot src="/case-study/ftm-insights.svg" alt="Three core insights from user research" width={1146} height={353} className="w-full h-auto block mt-[30px]" />
           </Text>
         </section>
 
